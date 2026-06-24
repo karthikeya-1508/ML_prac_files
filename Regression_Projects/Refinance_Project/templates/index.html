@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Refinance Volume Prediction</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+      label { display:block; margin-top: 0.75rem; }
+      input[type="number"] { width: 200px; padding: 0.25rem; }
+      .prediction { margin-top: 1rem; font-weight: bold; }
+      .submit { margin-top: 1rem; padding: 0.5rem 1rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Refinance Volume Prediction</h1>
+    <form method="post">
+      {% for col in feature_columns %}
+        <label for="{{ col }}">{{ col }}</label>
+        <input step="any" type="number" name="{{ col }}" id="{{ col }}" value="0" />
+      {% endfor %}
+      <div>
+        <button class="submit" type="submit">Predict</button>
+      </div>
+    </form>
+
+    {% if prediction is not none %}
+      <div class="prediction">Prediction: {{ prediction }}</div>
+    {% endif %}
+  </body>
+</html>

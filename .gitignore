@@ -8,3 +8,4 @@ Regression_Projects/Refinance_Project/coeff_values
 Regression_Projects/Refinance_Project/*.sav
 Regression_Projects/Refinance_Project/*.pkl
 Regression_Projects/Refinance_Project/*.pickle
+Regression_Projects/Refinance_Project/__pycache__/
