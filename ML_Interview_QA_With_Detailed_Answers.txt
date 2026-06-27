@@ -1,0 +1,151 @@
+Machine Learning Interview Preparation Handbook (Interview-Ready Answers)
+
+This document contains sample answers that you can speak in an
+interview.
+
+1.  What is Machine Learning? Answer: “Machine Learning is a subset of
+    Artificial Intelligence that enables computers to learn patterns
+    from historical data and make predictions or decisions without being
+    explicitly programmed.”
+
+2.  What are the types of Machine Learning? Answer: “There are four main
+    types:
+
+3.  Supervised Learning – learns from labeled data.
+
+4.  Unsupervised Learning – finds patterns in unlabeled data.
+
+5.  Semi-Supervised Learning – uses a small amount of labeled data with
+    a large amount of unlabeled data.
+
+6.  Reinforcement Learning – learns by interacting with an environment
+    using rewards and penalties.”
+
+7.  Difference between Classification and Regression? Answer:
+    “Classification predicts categorical outputs like Spam or Not Spam,
+    whereas Regression predicts continuous values like house prices.”
+
+8.  What is Overfitting? Answer: “Overfitting occurs when a model learns
+    the training data too well, including its noise. As a result, it
+    performs well on training data but poorly on unseen data.”
+
+9.  How do you reduce Overfitting? Answer: “I can reduce overfitting by
+    collecting more data, using cross-validation, applying
+    regularization, selecting important features, pruning decision
+    trees, tuning hyperparameters, or using ensemble methods.”
+
+10. What is Underfitting? Answer: “Underfitting occurs when the model is
+    too simple to capture the underlying patterns in the data, resulting
+    in poor performance on both training and testing datasets.”
+
+11. Why do we split data into train and test? Answer: “We split the data
+    to evaluate how well the model generalizes to unseen data. The model
+    learns from the training set and is evaluated on the testing set.”
+
+12. Why is scaling required? Answer: “Scaling ensures that all features
+    have a similar range. Algorithms based on distance, such as SVM,
+    KNN, K-Means, and Logistic Regression, perform better after
+    scaling.”
+
+13. Why doesn’t Random Forest require scaling? Answer: “Random Forest is
+    based on decision trees, which split data using feature thresholds
+    rather than distance calculations. Therefore, feature scaling is
+    generally unnecessary.”
+
+14. Why does SVM require scaling? Answer: “SVM calculates distances
+    between data points to find the optimal separating hyperplane.
+    Features with larger values can dominate the distance calculation,
+    so scaling is important.”
+
+15. When would you choose SVM over Random Forest? Answer: “I would
+    choose SVM when the dataset is small to medium-sized, has
+    high-dimensional features, and the classes are well separated. For
+    example, text classification and gene expression datasets.”
+
+16. When would you choose Random Forest? Answer: “I would choose Random
+    Forest for large datasets, noisy data, mixed feature types, and when
+    I want a robust model with minimal preprocessing.”
+
+17. What is Bagging? Answer: “Bagging trains multiple models
+    independently on different bootstrap samples and combines their
+    predictions. It mainly reduces variance. Random Forest is a classic
+    example.”
+
+18. What is Boosting? Answer: “Boosting trains models sequentially. Each
+    new model focuses on correcting the mistakes made by the previous
+    one. It mainly reduces bias. Examples include AdaBoost, Gradient
+    Boosting, and XGBoost.”
+
+19. Difference between Bagging and Boosting? Answer: “Bagging builds
+    models independently and reduces variance, whereas Boosting builds
+    models sequentially and reduces bias.”
+
+20. Explain Random Forest. Answer: “Random Forest is an ensemble
+    learning algorithm that builds multiple decision trees using random
+    subsets of data and features. The final prediction is obtained by
+    majority voting for classification or averaging for regression.”
+
+21. Explain Logistic Regression. Answer: “Despite its name, Logistic
+    Regression is a classification algorithm. It predicts probabilities
+    using the sigmoid function and classifies observations based on a
+    threshold.”
+
+22. What is Precision? Answer: “Precision tells us, out of all the
+    positive predictions made by the model, how many were actually
+    correct.”
+
+23. What is Recall? Answer: “Recall tells us, out of all the actual
+    positive cases, how many were correctly identified.”
+
+24. What is the F1 Score? Answer: “F1 Score is the harmonic mean of
+    Precision and Recall. It is useful when the dataset is imbalanced.”
+
+25. What is Cross Validation? Answer: “Cross Validation evaluates the
+    model by splitting the dataset into multiple folds. Every fold is
+    used once for validation, and the average performance is reported.”
+
+26. What is Hyperparameter Tuning? Answer: “Hyperparameter tuning is the
+    process of finding the best parameter values, such as max_depth or
+    n_estimators, to improve model performance.”
+
+27. Tell me about your project. Answer: “I begin by explaining the
+    problem statement, then describe the dataset, preprocessing steps,
+    feature engineering, algorithms used, evaluation metrics,
+    deployment, challenges, and finally the results and lessons
+    learned.”
+
+28. Why should we hire you? Answer: “I have built end-to-end machine
+    learning projects involving preprocessing, feature engineering,
+    model training, evaluation, hyperparameter tuning, Git, Flask
+    deployment, Python, SQL, and scikit-learn. Although I am a fresher,
+    I learn quickly, enjoy solving problems, and I’m excited to
+    contribute while continuously improving my skills.”
+
+29. Why do you want to join our company? Answer: “I want to join your
+    company because it offers opportunities to work on real-world
+    machine learning problems, collaborate with experienced
+    professionals, and continuously grow my technical skills while
+    contributing to impactful projects.”
+
+------------------------------------------------------------------------
+
+Common Follow-up Questions (Practice)
+
+• Why did you choose Random Forest instead of XGBoost? Suggested Answer:
+“I compared multiple algorithms using evaluation metrics and
+cross-validation. Random Forest gave the best balance of performance,
+stability, and training time for my dataset.”
+
+• How do you handle missing values? Suggested Answer: “I first analyze
+the percentage of missing values. Depending on the situation, I remove
+rows or columns, or use imputation techniques such as mean, median,
+mode, or model-based imputation.”
+
+• How do you know your model is overfitting? Suggested Answer: “If the
+training accuracy is significantly higher than the testing accuracy, it
+indicates that the model is overfitting.”
+
+• What evaluation metrics do you use? Suggested Answer: “For regression,
+I use MAE, MSE, RMSE, MAPE, and R² Score. For classification, I use
+Accuracy, Precision, Recall, F1 Score, ROC-AUC, and the Confusion
+Matrix.”
